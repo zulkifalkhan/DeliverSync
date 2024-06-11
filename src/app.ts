@@ -1,7 +1,7 @@
 import express from "express";
 
 import dotenv from "dotenv";
-import connectDB from "./framework/initDatabase";
+import initDatabase from "./framework/initDatabase";
 
 dotenv.config();
 
@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Connect to database
-connectDB();
+initDatabase();
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
