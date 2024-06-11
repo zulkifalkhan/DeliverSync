@@ -3,6 +3,7 @@ src/
     middlewares/
     initDatabase.ts
     initRedis.ts
+    initRabbitMQ.ts     # Initialize RabbitMQ connection
   server/
     controllers/
       orderController.ts
@@ -17,6 +18,7 @@ src/
     riderService.ts
     assignmentService.ts
     queueService.ts
+      # Queue handling logic for sending/receiving messages
   repositories/
     orderRepository.ts
     riderRepository.ts
