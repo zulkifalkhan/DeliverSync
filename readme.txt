@@ -25,3 +25,37 @@ git clone
 Add env 
 
 npm start
+
+src/
+  framework/
+    middlewares/
+    initDatabase.ts
+    initRedis.ts
+    initRabbitMQ.ts     # Initialize RabbitMQ connection
+  server/
+    controllers/
+      orderController.ts
+      riderController.ts
+      assignmentController.ts
+    routes/
+      orderRoutes.ts
+      riderRoutes.ts
+      assignmentRoutes.ts
+  services/
+    orderService.ts
+    riderService.ts
+    assignmentService.ts
+    queueService.ts
+      # Queue handling logic for sending/receiving messages
+  repositories/
+    orderRepository.ts
+    riderRepository.ts
+  shared/
+    dtos/
+  tests/
+    unit/
+    blackbox/
+  app.ts
+  loadbalancer/
+    nginx.conf
+
