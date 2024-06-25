@@ -14,6 +14,10 @@ export interface IOrder extends Document {
   totalAmount: number;
   status: OrderStatus;
   riderId?: Types.ObjectId; // Optional field to store the rider's ID
+  deliveryLocation: {
+    lat: number;
+    lng: number;
+  };
 }
 
 const OrderSchema: Schema = new Schema({
