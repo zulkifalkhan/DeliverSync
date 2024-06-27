@@ -13,3 +13,5 @@ MongoDB: NoSQL database for storing dynamic data.
 Socket.io: Real-time bidirectional event-based communication.
 Swagger: API documentation and design framework.
 Jest: JavaScript testing framework for unit and integration tests.
+
+![alt text](https://firebasestorage.googleapis.com/v0/b/reactnfirebase-14a76.appspot.com/o/DeliverSync.png?alt=media&token=9cf40657-64de-4e37-81bf-1321f9a7256f)
