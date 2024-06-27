@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import * as riderService from "../../../services/rider";
+import { io } from "../../../app"; // Import the io instance from app.ts
 
 export const createRider = async (req: Request, res: Response) => {
   try {
@@ -35,4 +36,12 @@ export const deleteRider = async (req: Request, res: Response) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
+};
+
+export const connectRider = (req: Request, res: Response) => {
+  const { riderId } = req.body;
+
+  // For testing, we can emit an event to simulate the rider connecting
+  io.emit("riderConnected", { riderId });
+  res.status(200).json({ message: "Rider connection simulated." });
 };
