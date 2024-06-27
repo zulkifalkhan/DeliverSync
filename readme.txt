@@ -1,4 +1,4 @@
-# DeliverSync
+DeliverSync
 DeliverSync is a microservice designed to optimize the process of assigning orders to riders based on their real-time location and availability, ensuring timely and efficient deliveries.
 
 ## Key Features
@@ -26,12 +26,14 @@ Add env
 
 npm start
 
+Folder Structure :
 src/
   framework/
     middlewares/
     initDatabase.ts
     initRedis.ts
     initRabbitMQ.ts     # Initialize RabbitMQ connection
+    initSocket.ts
   server/
     controllers/
       orderController.ts
