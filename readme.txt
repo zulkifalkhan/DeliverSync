@@ -1,63 +1,15 @@
-#DeliverSync
-##DeliverSync is a microservice designed to optimize the process of assigning orders to riders based on their real-time location and availability, ensuring timely and efficient deliveries
+DeliverSync
+DeliverSync is a robust microservice designed to streamline the process of assigning orders to riders in real-time, optimizing delivery efficiency.
 
-## Key Features
-- Real-Time Updates
-- Efficient Matching
-- Scalability
-
-## Tech Stack
-- Node.js
-- TypeScript
-- Express.js
-- MongoDB
-- Socket.io
-- Swagger
-- Jest
-
-## Installation
-
-1. Clone the repository
-```bash
-git clone 
-
-## npm install
-Add env 
-
-npm start
-
-Folder Structure :
-src/
-  framework/
-    middlewares/
-    initDatabase.ts
-    initRedis.ts
-    initRabbitMQ.ts     # Initialize RabbitMQ connection
-    initSocket.ts
-  server/
-    controllers/
-      orderController.ts
-      riderController.ts
-      assignmentController.ts
-    routes/
-      orderRoutes.ts
-      riderRoutes.ts
-      assignmentRoutes.ts
-  services/
-    orderService.ts
-    riderService.ts
-    assignmentService.ts
-    queueService.ts
-      # Queue handling logic for sending/receiving messages
-  repositories/
-    orderRepository.ts
-    riderRepository.ts
-  shared/
-    dtos/
-  tests/
-    unit/
-    blackbox/
-  app.ts
-  loadbalancer/
-    nginx.conf
-
+Key Features
+Real-Time Updates: Ensure instant updates on rider locations and order statuses.
+Efficient Matching: Utilize smart algorithms to match orders with the nearest available riders.
+Scalability: Built to handle large-scale operations, ensuring reliability during peak times.
+Tech Stack
+Node.js: Server-side runtime environment.
+TypeScript: Typed superset of JavaScript for enhanced code quality.
+Express.js: Fast, minimalist web framework for Node.js.
+MongoDB: NoSQL database for storing dynamic data.
+Socket.io: Real-time bidirectional event-based communication.
+Swagger: API documentation and design framework.
+Jest: JavaScript testing framework for unit and integration tests.
