@@ -1,5 +1,5 @@
-DeliverSync
-DeliverSync is a microservice designed to optimize the process of assigning orders to riders based on their real-time location and availability, ensuring timely and efficient deliveries.
+<h2>DeliverSync</h2>
+<h5>DeliverSync is a microservice designed to optimize the process of assigning orders to riders based on their real-time location and availability, ensuring timely and efficient deliveries.</h5>
 
 ## Key Features
 - Real-Time Updates
